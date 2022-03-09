@@ -1,0 +1,59 @@
+*,
+*::before,
+*::after {
+    padding: 0;
+    margin: 0;
+    border: 0;
+    box-sizing: border-box;
+}
+a {
+    text-decoration: none;
+}
+
+ol,
+ul,
+li {
+    list-style: none;
+}
+
+img {
+    vertical-align: top;
+}
+
+h1,
+h2,
+h3,
+h4,
+h5,
+h6 {
+    font-weight: inherit;
+    font-size: inherit;
+}
+html,
+body {
+    height: 100%;
+    line-height: 1;
+}
+body {
+    /*РАЗМЕР ШРИФТА И ЦВЕТ НАСЛЕДУЮТСЯ*/
+    font-family: Rubik;
+    font-size: 12px;
+    color: #616161;
+}
+/*...............................*/
+.wrapper {
+    overflow: hidden; /*ДЛЯ ОТСУТСТВИЯ ГОРИЗ.СКРОЛЛА ЧТОБ ПРИБИТЬ ПОДВАЛ К НИЗУ ПОТМУ СТО*/
+    display: flex;
+    flex-direction: column;
+    min-height: 100%; /*МИНИМ.ВЫСОТА СТО*/
+
+}
+
+.main{
+    flex:1 1 auto;/*ПРИБИЛИ ФУТЕР К ПОЛУ*/
+}
+
+[class*="__container"] {
+    max-width: 1057px;
+    margin: 0px auto;
+}
